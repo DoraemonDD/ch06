@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-3" style="background-color: white;">
+    <ul class="list-group-item" [ngClass]="{active:menuIndex==1}" (click)="menuClicked(1)">
+      用户管理
+    </ul>
+    <ul class="list-group-item" [ngClass]="{active:menuIndex==2}" (click)="menuClicked(2)">
+      成绩管理
+    </ul>
+    <ul class="list-group-item" [ngClass]="{active:menuIndex==3}" (click)="menuClicked(3)">
+      退出登录
+    </ul>
+  </div>
+
+  <div class="col-9" style="background-color: white;">
+    <router-outlet></router-outlet>
+  </div>
+</div>
